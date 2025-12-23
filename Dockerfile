@@ -1,5 +1,5 @@
 # Use a modern Runpod PyTorch base image
-FROM runpod/pytorch:1.0.3-cu1290-torch290-ubuntu2204
+FROM runpod/pytorch:2.8.0-py3.11-cuda12.8.1-cudnn-devel-ubuntu22.04
 
 # Install dependencies
 RUN pip install --no-cache-dir diffusers transformers accelerate safetensors pillow runpod hf_transfer bitsandbytes git+https://github.com/huggingface/diffusers
